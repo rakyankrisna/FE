@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
-    <title>Checkbox Input</title>
+    <title>Radio Input</title>
   </head>
   <body>
     <section id="overlay">
@@ -18,7 +18,7 @@
         </section>
         <hr>
         <section class="patties">
-        <label for="amount">How many patties would you like?</label>
+          <label for="amount">How many patties would you like?</label>
           <input type="number" name="amount" id="amount">
         </section>
         <hr>
@@ -26,24 +26,31 @@
           <label for="doneness">How do you want your patty cooked</label>
           <br>
           <span>Rare</span>
-          <input type="range" name="doneness" id="doneness" value="3" min="1" max="5">
+          <input type="range" name="doneness" id="doneness" value="3" min="1" max="5">         					
           <span>Well-Done</span>
         </section>
         <hr>
         <section class="toppings">
           <span>What toppings would you like?</span>
           <br>
-          <!--Add your code below for the first checkbox-->
-          <input id="lettuce" name="topping" type="checkbox" value="lettuce"></input>
-					<label for="lettuce">Lettuce</label>
-          <br>
-          <!--Add your code below for the second checkbox-->
-          <input id="tomato" name="topping" type="checkbox" value="tomato"></input>
+          <input type="checkbox" name="topping" id="lettuce" value="lettuce">
+          <label for="lettuce">Lettuce</label>
+          <input type="checkbox" name="topping" id="tomato" value="tomato">
           <label for="tomato">Tomato</label>
+          <input type="checkbox" name="topping" id="onion" value="onion">
+          <label for="onion">Onion</label>
+        </section>
+        <hr>
+
+        <section class="cheesy">
+          <span>Would you like to add cheese?</span>
           <br>
-          <!--Add your code below for the third checkbox-->
-          <input id="cheese" name="topping" type="checkbox" value="cheese"></input>
-          <label for="cheese">Cheese</label>
+	        <!--Add your first radio button below-->
+          <input type="radio" id="yes" name="cheese" value="yes"></input>
+          <label for="yes">Yes</label>
+	        <!--Add your second radio button below-->
+          <input type="radio" id="no" name="cheese" value="no"></input>
+          <label for="no">No</label>
         </section>
         
       </form>
